@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/img_news"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_headlines"
+        android:layout_below="@id/img_news"
+        android:text="MISHAL"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_subtitle"
+        android:layout_below="@id/txt_headlines"
+        android:text="MISHAL"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

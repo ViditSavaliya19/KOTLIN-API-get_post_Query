@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".retrofit.ApiActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl1">
+        <Button
+            android:id="@+id/US_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="US" />
+
+        <Button
+            android:id="@+id/IN_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/US_btn"
+            android:text="In" />
+
+        <Button
+            android:id="@+id/UK_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/IN_btn"
+
+            android:text="UK" />
+
+        <Button
+            android:id="@+id/AU_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/UK_btn"
+            android:text="AU" />
+    </RelativeLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/rl1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/rv_news"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
